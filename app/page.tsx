@@ -33,6 +33,14 @@ const products = [
     border: 'border-cyan-500/30',
   },
   {
+    name: 'VM Playground',
+    description: 'Write and execute LUXBIN Light Language code in your browser with a full interpreter.',
+    href: '/playground',
+    tag: 'Dev Tools',
+    color: 'from-amber-500/20 to-amber-900/20',
+    border: 'border-amber-500/30',
+  },
+  {
     name: 'ENS Subdomains',
     description: 'Claim yourname.luxbin.eth — decentralized identity powered by ENS.',
     href: '/ecosystem',

@@ -50,6 +50,18 @@ const products = [
     accent: 'text-blue-400',
   },
   {
+    name: 'VM Playground',
+    tag: 'Dev Tools',
+    description:
+      'Browser-based interpreter for LUXBIN Light Language. Write code, run it instantly, and explore photonic computing with built-in quantum simulation functions.',
+    features: ['AST-walking interpreter', 'Quantum simulation', 'Wavelength encoding', 'Example programs'],
+    href: '/playground',
+    status: 'Live',
+    color: 'border-amber-500/30',
+    gradient: 'from-amber-500/10 to-amber-900/10',
+    accent: 'text-amber-400',
+  },
+  {
     name: 'LUXBIN Light Language',
     tag: 'Language',
     description:
@@ -124,8 +136,8 @@ export default function EcosystemPage() {
                     {p.href !== '#' ? (
                       <a
                         href={p.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target={p.href.startsWith('http') ? '_blank' : undefined}
+                        rel={p.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className={`inline-block px-6 py-2.5 border border-slate-600 hover:border-slate-400 text-white font-medium rounded-lg transition-colors text-sm`}
                       >
                         Launch

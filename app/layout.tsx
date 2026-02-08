@@ -25,6 +25,9 @@ function Nav() {
           <Link href="/ecosystem" className="text-slate-300 hover:text-white transition-colors">
             Ecosystem
           </Link>
+          <Link href="/playground" className="text-slate-300 hover:text-white transition-colors">
+            Playground
+          </Link>
           <Link href="/buy" className="px-4 py-1.5 bg-violet-600 hover:bg-violet-500 text-white rounded-lg transition-colors font-medium">
             Buy LUX
           </Link>
@@ -59,6 +62,7 @@ function Footer() {
               <li><a href="https://drainer-defense-web.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-violet-400 transition-colors">Drainer Defense</a></li>
               <li><a href="https://luxbin-evm-compiler.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-violet-400 transition-colors">EVM Compiler</a></li>
               <li><a href="https://luxbin-evm-compiler.vercel.app/deploy" target="_blank" rel="noopener noreferrer" className="hover:text-violet-400 transition-colors">Deploy IDE</a></li>
+              <li><Link href="/playground" className="hover:text-violet-400 transition-colors">VM Playground</Link></li>
               <li><Link href="/ecosystem" className="hover:text-violet-400 transition-colors">All Products</Link></li>
             </ul>
           </div>
