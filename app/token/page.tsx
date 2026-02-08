@@ -1,6 +1,6 @@
 'use client'
 
-const TOKEN_ADDRESS = 'TBD' // Updated after Base mainnet deployment
+const TOKEN_ADDRESS = 'TBD' // Updated after Optimism mainnet deployment
 const TOKEN_SYMBOL = 'LUX'
 const TOKEN_DECIMALS = 18
 
@@ -44,7 +44,7 @@ export default function TokenPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-violet-950/40 via-slate-950 to-slate-950" />
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 text-center">
           <p className="text-violet-400 font-mono text-sm mb-4 tracking-wider uppercase">
-            ERC-20 on Base
+            ERC-20 on Optimism
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             LUX Token
@@ -66,7 +66,7 @@ export default function TokenPage() {
                 ['Symbol', 'LUX'],
                 ['Total Supply', '21,000,000 (fixed)'],
                 ['Standard', 'ERC-20 + ERC-20Burnable'],
-                ['Network', 'Base (Ethereum L2)'],
+                ['Network', 'Optimism (Ethereum L2)'],
                 ['Supply Model', 'Bitcoin-inspired — no minting after deploy'],
                 ['Burn Mechanism', 'Anyone can burn tokens to reduce supply permanently'],
               ].map(([label, value]) => (
@@ -83,13 +83,13 @@ export default function TokenPage() {
               <div className="space-y-4">
                 <div>
                   <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Network</p>
-                  <p className="text-white font-medium">Base (Chain ID: 8453)</p>
+                  <p className="text-white font-medium">Optimism (Chain ID: 10)</p>
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Contract Address</p>
                   <p className="text-white font-mono text-sm break-all">
                     {TOKEN_ADDRESS === 'TBD' ? (
-                      <span className="text-amber-400">Deploying to Base mainnet soon</span>
+                      <span className="text-amber-400">Deploying to Optimism mainnet soon</span>
                     ) : (
                       TOKEN_ADDRESS
                     )}
@@ -173,7 +173,7 @@ export default function TokenPage() {
         <div className="max-w-6xl mx-auto px-4 py-16 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Trade LUX</h2>
           <p className="text-slate-400 mb-8">
-            LUX will be available on decentralized exchanges on Base.
+            LUX will be available on decentralized exchanges on Optimism.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -182,15 +182,15 @@ export default function TokenPage() {
               rel="noopener noreferrer"
               className="px-6 py-3 border border-slate-600 hover:border-violet-500 text-slate-200 font-semibold rounded-lg transition-colors text-sm"
             >
-              Uniswap (Base)
+              Uniswap (Optimism)
             </a>
             <a
-              href="https://aerodrome.finance"
+              href="https://velodrome.finance"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border border-slate-600 hover:border-cyan-500 text-slate-200 font-semibold rounded-lg transition-colors text-sm"
             >
-              Aerodrome Finance
+              Velodrome Finance
             </a>
           </div>
         </div>

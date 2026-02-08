@@ -3,7 +3,7 @@ import Link from 'next/link'
 const stats = [
   { label: 'Total Supply', value: '21M LUX' },
   { label: 'Products Built', value: '5+' },
-  { label: 'Chain', value: 'Base (L2)' },
+  { label: 'Chain', value: 'Optimism (L2)' },
   { label: 'Token Standard', value: 'ERC-20' },
 ]
 
@@ -53,7 +53,7 @@ const roadmap = [
     phase: 'Phase 2',
     title: 'Launch',
     status: 'In Progress',
-    items: ['Ecosystem website (this site)', 'LUX token on Base mainnet', 'DEX liquidity (Uniswap / Aerodrome)', 'ENS subdomain registrations', 'Community launch'],
+    items: ['Ecosystem website (this site)', 'LUX token on Optimism mainnet', 'DEX liquidity (Uniswap / Velodrome)', 'ENS subdomain registrations', 'Community launch'],
   },
   {
     phase: 'Phase 3',
@@ -158,7 +158,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-slate-300">
                   <span className="w-2 h-2 rounded-full bg-red-500" />
-                  Deployed on Base L2 — fast &amp; cheap transactions
+                  Deployed on Optimism L2 — fast &amp; cheap transactions
                 </li>
               </ul>
               <Link
@@ -176,7 +176,7 @@ export default function Home() {
                   ['Symbol', 'LUX'],
                   ['Total Supply', '21,000,000'],
                   ['Standard', 'ERC-20'],
-                  ['Network', 'Base (Ethereum L2)'],
+                  ['Network', 'Optimism (Ethereum L2)'],
                   ['Features', 'Burnable, Fixed Supply'],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between text-sm">

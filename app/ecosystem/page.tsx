@@ -29,7 +29,7 @@ const products = [
     name: 'Deploy IDE',
     tag: 'Dev Tools',
     description:
-      'Remix-like deployment tool for smart contracts. Connect your wallet and deploy to Base, Ethereum mainnet, Sepolia, or any EVM chain directly from the browser.',
+      'Remix-like deployment tool for smart contracts. Connect your wallet and deploy to Optimism, Ethereum mainnet, Sepolia, or any EVM chain directly from the browser.',
     features: ['Multi-chain deployment', 'Wallet integration', 'Constructor args support', 'Deploy history'],
     href: 'https://luxbin-evm-compiler.vercel.app/deploy',
     status: 'Live',
@@ -77,7 +77,7 @@ export default function EcosystemPage() {
             Products &amp; Tools
           </h1>
           <p className="text-lg text-slate-400 max-w-xl mx-auto">
-            Everything you need to build, deploy, and secure smart contracts on Base and Ethereum.
+            Everything you need to build, deploy, and secure smart contracts on Optimism and Ethereum.
           </p>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function EcosystemPage() {
             </div>
             <div className="p-6 rounded-xl border border-slate-800 bg-slate-950/50 text-center">
               <p className="text-3xl font-bold gradient-text mb-2">Layer 2</p>
-              <p className="text-white font-semibold mb-1">Base</p>
+              <p className="text-white font-semibold mb-1">Optimism</p>
               <p className="text-slate-400 text-sm">LUX token, smart contracts, fast execution</p>
             </div>
             <div className="p-6 rounded-xl border border-slate-800 bg-slate-950/50 text-center">
@@ -171,7 +171,7 @@ export default function EcosystemPage() {
       <section className="max-w-6xl mx-auto px-4 py-16 text-center">
         <h2 className="text-2xl font-bold text-white mb-4">Start Building</h2>
         <p className="text-slate-400 mb-8">
-          Write your first LUXBIN contract and deploy it to Base in minutes.
+          Write your first LUXBIN contract and deploy it to Optimism in minutes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

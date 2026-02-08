@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'LUXBIN — Photonic Computing Platform for Ethereum',
-  description: 'The photonic computing platform for Ethereum. Dev tools, token, and ecosystem built on Base.',
+  description: 'The photonic computing platform for Ethereum. Dev tools, token, and ecosystem built on Optimism.',
 }
 
 function Nav() {
@@ -78,7 +78,7 @@ function Footer() {
         </div>
         <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
           <p>&copy; {new Date().getFullYear()} LUXBIN. Built by Nichole Christie.</p>
-          <p className="mt-2 md:mt-0">Deployed on Base &middot; Powered by Ethereum</p>
+          <p className="mt-2 md:mt-0">Deployed on Optimism &middot; Powered by Ethereum</p>
         </div>
       </div>
     </footer>
