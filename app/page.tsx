@@ -83,10 +83,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/token"
+              href="/buy"
               className="px-8 py-3 bg-violet-600 hover:bg-violet-500 text-white font-semibold rounded-lg transition-colors"
             >
-              Get LUX Token
+              Buy LUX
             </Link>
             <Link
               href="/ecosystem"

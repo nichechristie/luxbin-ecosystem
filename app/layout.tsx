@@ -25,6 +25,9 @@ function Nav() {
           <Link href="/ecosystem" className="text-slate-300 hover:text-white transition-colors">
             Ecosystem
           </Link>
+          <Link href="/buy" className="px-4 py-1.5 bg-violet-600 hover:bg-violet-500 text-white rounded-lg transition-colors font-medium">
+            Buy LUX
+          </Link>
           <a
             href="https://github.com/nichechristie"
             target="_blank"
