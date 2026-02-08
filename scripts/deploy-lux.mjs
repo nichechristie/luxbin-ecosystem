@@ -149,10 +149,15 @@ contract LuxbinToken is ERC20, ERC20Burnable {
 `
 
 async function main() {
-  const privateKey = process.env.PRIVATE_KEY
+  const fs = await import('fs')
+  const keyFile = new URL('../.env.key', import.meta.url).pathname
+  let privateKey = process.env.PRIVATE_KEY
+  if (!privateKey && fs.existsSync(keyFile)) {
+    privateKey = fs.readFileSync(keyFile, 'utf-8').trim()
+  }
   if (!privateKey) {
-    console.error('\n  ERROR: Set your private key first:\n')
-    console.error('  PRIVATE_KEY=0xYOUR_KEY node scripts/deploy-lux.mjs\n')
+    console.error('\n  ERROR: No key found.')
+    console.error('  Either set PRIVATE_KEY env var or create .env.key file.\n')
     process.exit(1)
   }
 
@@ -217,8 +222,8 @@ async function main() {
   console.log('  ====================================\n')
 
   // Write the address to a file so we can update the website
-  const fs = await import('fs')
-  fs.writeFileSync('scripts/deployed-address.txt', address)
+  const fsWrite = await import('fs')
+  fsWrite.writeFileSync('scripts/deployed-address.txt', address)
   console.log(`  Address saved to scripts/deployed-address.txt`)
   console.log('  Run the update script to patch the website:\n')
   console.log(`  node scripts/update-token-address.mjs\n`)

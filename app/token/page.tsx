@@ -1,6 +1,6 @@
 'use client'
 
-const TOKEN_ADDRESS = 'TBD' // Updated after Optimism mainnet deployment
+const TOKEN_ADDRESS = '0x479EeC6Bbab3840258bA2D6cEc592fF8B5908477' // Updated after Optimism mainnet deployment
 const TOKEN_SYMBOL = 'LUX'
 const TOKEN_DECIMALS = 18
 
@@ -88,11 +88,7 @@ export default function TokenPage() {
                 <div>
                   <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Contract Address</p>
                   <p className="text-white font-mono text-sm break-all">
-                    {TOKEN_ADDRESS === 'TBD' ? (
-                      <span className="text-amber-400">Deploying to Optimism mainnet soon</span>
-                    ) : (
-                      TOKEN_ADDRESS
-                    )}
+                    {TOKEN_ADDRESS}
                   </p>
                 </div>
                 <div>
