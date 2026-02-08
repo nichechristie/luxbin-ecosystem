@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-luxbin: linear-gradient(90deg, #8b5cf6, #06b6d4, #ef4444);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.gradient-bar {
+  height: 3px;
+  background: var(--gradient-luxbin);
+}
+
+.gradient-text {
+  background: var(--gradient-luxbin);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+}
